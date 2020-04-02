@@ -1,0 +1,26 @@
+body {
+  margin: 0; 
+  padding: 0;
+}
+
+.container {
+  .header-section {
+    h1 {
+      color: red;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    a {
+      color: blue;
+    }
+  }
+
+  .footer-section {
+    h1 {
+      color: green;
+    }
+  }
+}
