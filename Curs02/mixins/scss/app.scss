@@ -1,0 +1,55 @@
+@mixin arrow-left($color: red) {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid $color;
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+@mixin btn($arrow-direction: 'left') {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #000;
+
+  &::before {
+    content: '';
+    @if $arrow-direction == 'left' {
+      @include arrow-left(blue);
+    }
+
+    @if $arrow-direction == 'right' {
+      @include arrow-left(blue);
+      transform: rotate(180deg);
+    }
+
+    @if $arrow-direction == 'up' {
+      @include arrow-left(red);
+      transform: rotate(90deg);
+    }
+
+    @if $arrow-direction == 'down' {
+      @include arrow-left(red);
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+
+
+.btn-arrow-left {
+  @include btn('left');
+}
+
+.btn-arrow-right {
+  @include btn('right');
+}
+
+.btn-arrow-up {
+  @include btn('up');
+}
+
+.btn-arrow-down {
+  @include btn('down');
+}

@@ -1,0 +1,68 @@
+.btn-arrow-left {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #000;
+}
+.btn-arrow-left::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid blue;
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.btn-arrow-right {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #000;
+}
+.btn-arrow-right::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid blue;
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+  margin-right: 5px;
+  transform: rotate(180deg);
+}
+
+.btn-arrow-up {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #000;
+}
+.btn-arrow-up::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid red;
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+  margin-right: 5px;
+  transform: rotate(90deg);
+}
+
+.btn-arrow-down {
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #000;
+}
+.btn-arrow-down::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid red;
+  border-bottom: 5px solid transparent;
+  display: inline-block;
+  margin-right: 5px;
+  transform: rotate(-90deg);
+}
+
+/*# sourceMappingURL=style.css.map */
