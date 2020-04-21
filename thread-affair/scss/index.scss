@@ -6,4 +6,13 @@ $fa-font-path: '/fonts';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/brands';
 @import './../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
 
+
 @import './../node_modules/bootstrap/scss/bootstrap-reboot';
+
+@import './reset';
+
+@import './variables';
+@import './common';
+@import './shared/index';
+@import './homepage/index';
+@import './category/index';
