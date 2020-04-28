@@ -21,7 +21,8 @@ body {
   justify-content: center;
   align-items: center;
   flex-basis: 75px;
-  max-width: 75px; 
+  max-width: 75px;
+  width: 75px;
   height: 75px; 
   flex-shrink: 1;
   border: 1px solid red; 
@@ -47,3 +48,37 @@ body {
   color: #fff;
 }
 /* do not touch this */
+
+.flex-container-01 {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.flex-container-01 :last-child {
+  flex-grow: 1;
+}
+
+.flex-container-01 :nth-child(3) {
+  flex-grow: 2;
+}
+
+.flex-container-02 {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.flex-container-02 :nth-child(2) {
+  flex-grow: 1;
+}
+
+.flex-container-03 {
+  flex-direction: column-reverse;
+}
+
+.flex-container-03 :nth-child(2) {
+  flex-grow: 2;
+}
+
+.flex-container-03 :nth-child(4) {
+  flex-grow: 1;
+}
