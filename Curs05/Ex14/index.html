@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <form class="container">
+    <div class="row">
+      <div class="col">
+        <h1>Formular reteta</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h2>Reteta</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="nume" class="input-group-text">Nume reteta *</label>
+          </div>
+          <input type="text" class="form-control" id="nume" placeholder="Nume reteta *" required>
+        </div>
+        
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="long-description" class="input-group-text">Descriere lunga *</label>
+          </div>
+          <textarea class="form-control" id="long-description" rows="10" placeholder="Descriere lunga *" required></textarea>
+        </div>
+
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="short-description" class="input-group-text">Descriere scurta *</label>
+          </div>
+          <textarea class="form-control" id="short-description" rows="4" placeholder="Descriere scurta *" required></textarea>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="custom-file mb-2">
+          <label class="custom-file-label" for="customFile">Imagine principala *</label>
+          <input type="file" class="custom-file-input" id="custom-file" required>
+        </div>
+
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="author" class="input-group-text">Autor *</label>
+          </div>
+          <select class="form-control" id="author">
+            <option value="">--autor--</option>
+          </select>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h2>Autor</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="custom-control custom-switch">
+          <input type="checkbox" class="custom-control-input" id="author-switch">
+          <label class="custom-control-label" for="author-switch">Adauga autor</label>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="author-name" class="input-group-text">Numele autorului *</label>
+          </div>
+          <input type="text" class="form-control" id="author-name" placeholder="Numele autorului *" required>
+        </div>
+
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="author-surname" class="input-group-text">Prenumele autorului *</label>
+          </div>
+          <input type="text" class="form-control" id="author-surname" placeholder="Prenumele autorului *" required>
+        </div>
+
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="author-email" class="input-group-text">Email *</label>
+          </div>
+          <input type="text" class="form-control" id="author-email" placeholder="Email *" required>
+        </div>
+
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="website" class="input-group-text">Website</label>
+          </div>
+          <input type="text" class="form-control" id="website" placeholder="Website">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <h2>Ingrediente</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <label for="ingredient-name" class="input-group-text">Nume ingredient *</label>
+          </div>
+          <input type="text" class="form-control" id="ingredient-name" placeholder="Nume ingredient *" required>
+          <button type="button" class="btn btn-primary">
+            <span class="d-sm-none">+</span>
+            <span class="d-none d-sm-block">Adauga</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <h3>Lista ingrediente</h3>
+        <ul class="mt-3">
+          <li class="my-2">
+            <span>10g ulei</span>
+            <button type="button" class="btn btn-primary btn-sm">Editeaza</button>
+            <button type="button" class="btn btn-danger btn-sm">Sterge</button>
+          </li>
+          <li class="mb-2">
+            <span>200g ceapa</span> 
+            <button type="button" class="btn btn-primary btn-sm">Editeaza</button>
+            <button type="button" class="btn btn-danger btn-sm">Sterge</button>
+          </li>
+          <li>
+            <span>200g ardei gras</span> 
+            <button type="button" class="btn btn-primary btn-sm">Editeaza</button>
+            <button type="button" class="btn btn-danger btn-sm">Sterge</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col text-center">
+        <button type="reset" class="btn btn-outline-danger btn-lg">Reseteaza tot</button>
+        <button type="submit" class="btn btn-primary btn-lg">Trimite reteta</button>
+      </div>
+    </div>
+  </form>
+</body>
+</html>
