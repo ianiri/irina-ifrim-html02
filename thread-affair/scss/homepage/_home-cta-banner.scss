@@ -19,6 +19,15 @@
     justify-content: flex-end;
     padding-bottom: 25px;
 
+    @include media-breakpoint-up('md') {
+      padding-bottom: 0;
+      justify-content: center;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+
     & > span {
       display: block;
     }

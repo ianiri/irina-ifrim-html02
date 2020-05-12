@@ -9,16 +9,25 @@
     align-items: center;
     color: $white;
 
+    @include media-breakpoint-up('md') {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
     [for="field-newsletter"] {
       font-size: 14px;
       text-transform: uppercase;
       display: block;
       text-align: center;
-      line-height: 30px;
+      line-height: 30px;  
 
       span {
         font-weight: 700;
         font-size: 40px;
+
+        @include media-breakpoint-up('md') {
+          display: block;
+        }
       }
     }
 
@@ -32,6 +41,15 @@
       display: inline-block;
       margin-bottom: 16px;
       min-width: 178px;
+
+      @include media-breakpoint-up('md') {
+        width: 200px;
+        align-self: flex-end;
+      }
+
+      @include media-breakpoint-up('lg') {
+        width: 550px;
+      }
     }
 
     button {
